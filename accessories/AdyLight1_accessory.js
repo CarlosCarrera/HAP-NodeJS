@@ -10,7 +10,7 @@ var options = {
 
   port: 1883,
 
-  host: '192.168.1.37',
+  host: '192.168.0.37',
 
   clientId: 'AdyLight1'
 
