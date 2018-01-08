@@ -44,7 +44,7 @@ var lightUUID = uuid.generate('hap-nodejs:accessories:Accesory2_4');
 var light = exports.accessory = new Accessory('AdyLight_4', lightUUID);
 
 // Add properties for publishing (in case we're using Core.js and not BridgedCore.js)
-light.username = "FA:3C:ED:5A:1A:1A";
+light.username = "FB:3C:ED:5A:1A:1A";
 light.pincode = "031-45-154";
 
 // set some basic properties (these values are arbitrary and setting them is optional)
