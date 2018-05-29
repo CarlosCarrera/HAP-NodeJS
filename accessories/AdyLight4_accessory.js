@@ -22,7 +22,7 @@ var uuid = require('../').uuid;
 var ADY_LIGHT = {
   powerOn: false,
   setPowerOn: function(on) {
-    console.log("Turning the AdyLight2 light %s!", on ? "on" : "off");
+    console.log("Turning the AdyLight4 light %s!", on ? "on" : "off");
     if (on) {
       client.publish('AdyLight', 'on4');
       ADY_LIGHT.powerOn = on;
@@ -38,7 +38,7 @@ var ADY_LIGHT = {
 // Generate a consistent UUID for our light Accessory that will remain the same even when
 // restarting our server. We use the `uuid.generate` helper function to create a deterministic
 // UUID based on an arbitrary "namespace" and the word "AdyLight".
-var lightUUID = uuid.generate('hap-nodejs:accessories:Accesory2_4');
+var lightUUID = uuid.generate('hap-nodejs:accessories:Accesory2_2');
 
 // This is the Accessory that we'll return to HAP-NodeJS that represents our fake light.
 var light = exports.accessory = new Accessory('AdyLight_4', lightUUID);
